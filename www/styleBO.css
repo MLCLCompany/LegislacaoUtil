@@ -1,5 +1,5 @@
 body > section {
-    padding: 70px 0;
+    padding: 2%;
 }
 
 section {
@@ -12,39 +12,48 @@ section {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 2%;
+	margin-left: 15%;
+	
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2%;
+    padding-left: 2%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .container {
-    width: 1170px;
+    width: 65%;
 }
 
 .center {
     text-align: center;
-    padding-bottom: 55px;
+    padding-bottom: 6%;
 }
 
 .titleAndCategory {
 	width: 35%;		
-	align: center;
+	margin: auto;
+	border: 1% solid #ccc;
+	border-radius: 6%;
 }
 
 .lawDecree {
 	width: 15%;	
-	align: center;
+	margin: auto;
+	border: 1% solid #ccc;
+	border-radius: 6%;
 }
 
 .description {
 	width: 60%;
 	height: auto;	
-	align: center;
+	margin: auto;
+	border: 1% solid #ccc;
+	border-radius: 6%;
+	font-size: 20px;
 }
 
 .button {
@@ -64,9 +73,20 @@ body {
 }
 
 .label {
-	align: center;
+	text-align: center;
+	font: bold 20px Arial Black;
+	color: #e17b21;
 }
 
+.bigTitle {
+	font: bold 35px Arial Black;
+	color: #e17b21;
+}
+
+.smallTitle {
+	font: bold 16px Arial Black;
+	color: #e17b21;
+}
 
 
 
