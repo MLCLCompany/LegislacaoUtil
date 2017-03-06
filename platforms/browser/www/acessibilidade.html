@@ -13,8 +13,21 @@
     <script type="text/javascript" src="cordova.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="lerFirebase.js"></script>
-    
+   <script type="text/javascript">
+ $(document).ready(function() {
+    var url = "json.php";
+    $.getJSON(url, function(result) {
+        console.log(result);
+        $.each(result, function(i, field) {
+            var id = field.id;
+            var title = field.title;
+            var duration = field.duration;
+            var price = field.price;
+            $("#list").append("<a class='item' href='form.html?id=" + id + "&title=" + title + "&duration=" + duration + "&price=" + price + "'><span class='item-note'>$" + price + "</span><h2>" + title + " </h2><p>" + duration + "</p></a>");
+        });
+    });
+});
+ </script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
