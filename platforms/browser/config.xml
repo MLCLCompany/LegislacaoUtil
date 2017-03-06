@@ -7,11 +7,11 @@
     <author email="company.mlcl@gmail.com">
         Company MLCL
     </author>
-    <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/mipmap-ldpi/ic_launcher.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/mipmap-mdpi/ic_launcher.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="res/icon/android/mipmap-hdpi/ic_launcher.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icon/android/mipmap-xhdpi/ic_launcher.png" />
-    <icon gap:platform="android" gap:qualifier="xxhdpi" src="res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/mipmap-ldpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/mipmap-mdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/mipmap-hdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/mipmap-xhdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="xxhdpi" src="www/res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
     <content src="index.html" />
     <access origin="*" />
     <preference name="permissions" value="none" />
