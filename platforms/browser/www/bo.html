@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="inserirFirebase.js"></script>
+
+    </head>
+    <body>
+	<form>
+		<div class="form-group">
+			<label>Título</label>
+			<input type="text" id="titulo"><br>
+			Categoria:<input type="text" id="categoria"><br>
+				DL<input type="text" id="dl"><br>
+				Descrição<textarea id="descricao"></textarea>
+		</div>
+				<button onclick="saveToList();">Submit</button>
+		</form>
+				<div id="list"></div>
+    </body>
+</html>

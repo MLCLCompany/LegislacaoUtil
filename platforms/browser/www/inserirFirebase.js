@@ -1,4 +1,4 @@
-
+// Initialize Firebase
   var config = {
      apiKey: "AIzaSyC2FllVmQgH-3yt7_SdW1N6ham_ubFYaPg",
     authDomain: "legislacaoutil.firebaseapp.com",
@@ -6,18 +6,43 @@
     storageBucket: "legislacaoutil.appspot.com",
     messagingSenderId: "546399102928"
   };
-	  firebase.initializeApp(config);
+  firebase.initializeApp(config);
 
+
+function saveToList() {
+   var dl = document.getElementById('dl').value.trim();
+   var descricao = document.getElementById('descricao').value.trim();
+   var titulo = document.getElementById('titulo').value.trim();
+   var categoria = document.getElementById('categoria').value.trim();
+   saveToFB(categoria, titulo, dl, descricao);
+   document.getElementById('categoria').value = '';
+   document.getElementById('dl').value = '';
+   document.getElementById('descricao').value = '';
+   document.getElementById('titulo').value = '';
+   return false;
+};
+ 
+function saveToFB(categoria, titulo, dl, descricao) {
+    // this will save data to Firebase
+    firebase.database().ref('dls/').push({
+        categoria: categoria,
+		dl: dl,
+        titulo: titulo,
+        descricao: descricao
+    });
+};
+
+
+function apagas(key){
+	firebase.database().ref('dls/').child(key).remove();
+};
 
 function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
-        lis+='<div class="direito" id="d' + list[i].key + '" onclick="$(\'#' + list[i].key + '\').toggle(500);">';
-		lis+=list[i].titulo;
-        lis+='<div class="direitoDescricao" id="' + list[i].key + '" style="display: none">';
-        lis+=list[i].descricao;
-        lis+='</div></div>';
-	};    
+        lis+='<br><br><span id="'+ list[i].key +'">';
+        lis+=list[i].categoria + ' | ' +list[i].titulo + ' | ' + list[i].dl + ' | ' + list[i].descricao + ' <a href="" onclick="apagas(\''+list[i].key+'\');">DELETE</a></span>';
+    };    
     document.getElementById('list').innerHTML = lis;
 };
  
