@@ -25,3 +25,13 @@ section {
 .container {
     width: 1170px;
 }
+
+.center {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.bosta1 {
+	width: 99%;
+	
+}
