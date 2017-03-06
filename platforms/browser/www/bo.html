@@ -6,6 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
+	<section id="jurisdição">
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +20,21 @@ and open the template in the editor.
 	<form>
 		<div class="form-group">
 			<label>Título</label>
+			<br>
 			<input type="text" id="titulo"><br>
-			Categoria:<input type="text" id="categoria"><br>
-				DL<input type="text" id="dl"><br>
-				Descrição<textarea id="descricao"></textarea>
+			<label>Categoria</label>
+			<br>
+			<input type="text" id="categoria"><br>
+			<label>DL</label>
+			<br>
+			<input type="text" id="dl"><br>
+			<label>Descrição<label>
+			<br>
+			<textarea id="descricao"></textarea>
 		</div>
 				<button onclick="saveToList();">Submit</button>
 		</form>
 				<div id="list"></div>
+	</section>			
     </body>
 </html>
