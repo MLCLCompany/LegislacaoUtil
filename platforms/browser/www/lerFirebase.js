@@ -9,7 +9,8 @@
     databaseURL: "https://legislacaoutil.firebaseio.com",
     storageBucket: "legislacaoutil.appspot.com",
     messagingSenderId: "546399102928"
-  };firebase.initializeApp(config);	
+  };
+  firebase.initializeApp(config);	
 
 
 function refreshUI(list) {
