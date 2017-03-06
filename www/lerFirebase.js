@@ -1,11 +1,6 @@
-window.onload = function(){
-	document.addEventListener("deviceready", init, false);
-}
-
-
-function init(){
-		  firebase.initializeApp(config);	
-}
+	function init() {
+		document.addEventListener("deviceready", onDeviceReady, true);
+	}
 
 
   var config = {
@@ -14,7 +9,7 @@ function init(){
     databaseURL: "https://legislacaoutil.firebaseio.com",
     storageBucket: "legislacaoutil.appspot.com",
     messagingSenderId: "546399102928"
-  };
+  };firebase.initializeApp(config);	
 
 
 function refreshUI(list) {
