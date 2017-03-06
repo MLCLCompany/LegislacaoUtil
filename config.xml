@@ -12,15 +12,15 @@
 <preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="true" />
      
-   <icon src="res/icon/android/mipmap-ldpi/ic_launcher.png" gap:platform="android" gap:qualifier="ldpi"/>
+   <icon src="www/res/icon/android/mipmap-ldpi/ic_launcher.png" gap:platform="android" gap:qualifier="ldpi"/>
 	
-	<icon src="res/icon/android/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi"/>
+	<icon src="www/res/icon/android/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi"/>
 	
-	<icon src="res/icon/android/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi"/>
+	<icon src="www/res/icon/android/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi"/>
 	
-	<icon src="res/icon/android/mipmap-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi"/>
+	<icon src="www/res/icon/android/mipmap-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi"/>
 	
-	<icon src="res/icon/android/mipmap-xxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxhdpi"/>
+	<icon src="www/res/icon/android/mipmap-xxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxhdpi"/>
  
     <content src="index.html" />
     <access origin="*" />
