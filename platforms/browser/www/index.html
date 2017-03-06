@@ -13,7 +13,19 @@
     <script type="text/javascript" src="cordova.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<script>
-	
+	window.onload = function(){
+	document.addEventListener("deviceready", init, false);
+}
+
+
+function init(){
+		  function verDireitos(){
+		if(navigator.onLine){
+			window.location.href="opcoes.html";
+		}else
+			alert("LIGA A NET");
+	}
+}
 	function verDireitos(){
 		if(navigator.onLine){
 			window.location.href="opcoes.html";

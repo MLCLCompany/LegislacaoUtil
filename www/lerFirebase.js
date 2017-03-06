@@ -1,3 +1,11 @@
+window.onload = function(){
+	document.addEventListener("deviceready", init, false);
+}
+
+
+function init(){
+		  firebase.initializeApp(config);	
+}
 
 
   var config = {
@@ -7,7 +15,6 @@
     storageBucket: "legislacaoutil.appspot.com",
     messagingSenderId: "546399102928"
   };
-	  firebase.initializeApp(config);
 
 
 function refreshUI(list) {
