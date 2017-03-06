@@ -24,5 +24,7 @@
  
     <content src="index.html" />
        <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
+	   <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+
 <access origin="*" launch-external="yes" />
 </widget>
