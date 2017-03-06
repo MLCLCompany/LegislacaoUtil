@@ -13,17 +13,20 @@ function saveToList() {
    var dl = document.getElementById('dl').value.trim();
    var descricao = document.getElementById('descricao').value.trim();
    var titulo = document.getElementById('titulo').value.trim();
-   saveToFB(titulo, dl, descricao);
+   var categoria = document.getElementById('categoria').value.trim();
+   saveToFB(categoria, titulo, dl, descricao);
+   document.getElementById('categoria').value = '';
    document.getElementById('dl').value = '';
    document.getElementById('descricao').value = '';
    document.getElementById('titulo').value = '';
    return false;
 };
  
-function saveToFB(titulo, dl, descricao) {
+function saveToFB(categoria, titulo, dl, descricao) {
     // this will save data to Firebase
     firebase.database().ref('dls/').push({
-        dl: dl,
+        categoria: categoria,
+		dl: dl,
         titulo: titulo,
         descricao: descricao
     });
@@ -38,7 +41,7 @@ function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
         lis+='<br><br><span id="'+ list[i].key +'">';
-        lis+=list[i].titulo + ' | ' + list[i].dl + ' | ' + list[i].descricao + ' <a href="" onclick="apagas(\''+list[i].key+'\');">DELETE</a></span>';
+        lis+=list[i].categoria + ' | ' +list[i].titulo + ' | ' + list[i].dl + ' | ' + list[i].descricao + ' <a href="" onclick="apagas(\''+list[i].key+'\');">DELETE</a></span>';
     };    
     document.getElementById('list').innerHTML = lis;
 };
@@ -48,11 +51,13 @@ firebase.database().ref('dls/').on("value", function(snapshot) {
     var list = [];
     for (var key in data) {
         if (data.hasOwnProperty(key)) {
+            categoria = data[key].categoria ? data[key].categoria : '';
             titulo = data[key].titulo ? data[key].titulo : '';
             dl = data[key].dl ? data[key].dl : '';
             descricao = data[key].descricao ? data[key].descricao : '';
             if ((titulo.trim().length > 0) /*&& day==descricao*/) {
                 list.push({
+					categoria: categoria,
                     titulo: titulo,	
       				  dl: dl,
        				  descricao: descricao,			
