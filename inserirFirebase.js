@@ -38,8 +38,7 @@ function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
         lis+='<br><br><span id="'+ list[i].key +'">';
-        lis+=' | ' + list[i].dl;
-        lis+=' | ' + list[i].titulo + ' | <a href="" onclick="apagas(\''+list[i].key+'\');">DELETE</a></span>';
+        lis+=list[i].titulo + ' | ' + list[i].dl + ' | ' + list[i].descricao + ' <a href="" onclick="apagas(\''+list[i].key+'\');">DELETE</a></span>';
     };    
     document.getElementById('list').innerHTML = lis;
 };
