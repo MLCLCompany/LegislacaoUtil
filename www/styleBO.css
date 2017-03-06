@@ -32,14 +32,44 @@ section {
 }
 
 .titleAndCategory {
-	width: 35%;	
+	width: 35%;		
+	align: center;
 }
 
 .lawDecree {
-	width: 15%;
+	width: 15%;	
+	align: center;
 }
 
 .description {
-	width: 65%;
-	height: auto;
+	width: 60%;
+	height: auto;	
+	align: center;
 }
+
+.button {
+    width: 100%;
+    color: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    font: bold 28px Arial Black;
+    padding: 22px 30px;
+    text-transform: uppercase;
+	background: #e17b21;
+	border: none;
+}
+
+body {
+	background: #ECECEA;
+}
+
+.label {
+	align: center;
+}
+
+
+
+
+
+
+
