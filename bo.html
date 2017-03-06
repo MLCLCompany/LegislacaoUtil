@@ -16,11 +16,16 @@ and open the template in the editor.
 
     </head>
     <body>
-        Título:<input type="text" id="titulo"><br>
-        Categoria:<input type="text" id="categoria"><br>
-        DL<input type="text" id="dl"><br>
-        Descrição<textarea id="descricao"></textarea>
-        <button onclick="saveToList();">Submit</button>
-        <div id="list"></div>
+	<form>
+		<div class="form-group">
+			<label>Título</label>
+			<input type="text" id="titulo"><br>
+			Categoria:<input type="text" id="categoria"><br>
+				DL<input type="text" id="dl"><br>
+				Descrição<textarea id="descricao"></textarea>
+		</div>
+				<button onclick="saveToList();">Submit</button>
+		</form>
+				<div id="list"></div>
     </body>
 </html>
