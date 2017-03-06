@@ -31,7 +31,15 @@ section {
     padding-bottom: 55px;
 }
 
-.bosta1 {
-	width: 99%;
-	
+.titleAndCategory {
+	width: 35%;	
+}
+
+.lawDecree {
+	width: 15%;
+}
+
+.discretion {
+	width: 35%;
+	height: auto;
 }
