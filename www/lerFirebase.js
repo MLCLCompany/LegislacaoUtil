@@ -1,4 +1,5 @@
 
+
   var config = {
      apiKey: "AIzaSyC2FllVmQgH-3yt7_SdW1N6ham_ubFYaPg",
     authDomain: "legislacaoutil.firebaseapp.com",
@@ -30,7 +31,8 @@ firebase.database().ref('dls/').on("value", function(snapshot) {
             titulo = data[key].titulo ? data[key].titulo : '';
             dl = data[key].dl ? data[key].dl : '';
             descricao = data[key].descricao ? data[key].descricao : '';
-            if ((titulo.trim().length > 0) /*&& day==descricao*/) {
+			categoriaDaPagina=document.getElementById('categoria').innerHTML;
+            if (((titulo.trim().length > 0) && categoria==categoriaDaPagina) || (titulo.trim().length > 0) && categoriaDaPagina=="Todos") {
                 list.push({
 					categoria: categoria,
                     titulo: titulo,	

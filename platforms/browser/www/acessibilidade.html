@@ -11,24 +11,19 @@
     <script type="text/javascript" src="res/js/jquery.mobile-1.4.5.min.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lerFirebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="lerFirebase.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div id="topBar">
 	    <a href="opcoes.html"><div class="topBarBack"><img class="back" src="res/back.png"></div></a>
-	    <div class="topBarInfo">Acessibilidade</div>
+	    <div class="topBarInfo" id="categoria">Acessibilidade</div>
     </div>
-    
-     
-     <div class="direito" id="d4" onclick="$('#4').toggle(500);">
-     		XXXXXXXXXXXXXXXXXXXXXXXXXXx
-        	<div class="direitoDescricao" id="4" style="display: none">
-        	<p><b>Decreto-Lei n.º XXXXXXXXXXXXXXXXXXXx</b></p>
-        	XXXXXXXXXXXXXXXXXXXXXXXXXXX
-        	</div>
+    <div id="list">
      </div>
-     
 
 
 
