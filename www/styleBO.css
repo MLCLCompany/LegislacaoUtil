@@ -36,24 +36,26 @@ section {
 .titleAndCategory {
 	width: 35%;		
 	margin: auto;
-	border: 1% solid #ccc;
-	border-radius: 6%;
+	border: 1px solid #ccc;
+	border-radius: 2%;
+	font: 16px Arial;
 }
 
 .lawDecree {
 	width: 15%;	
 	margin: auto;
-	border: 1% solid #ccc;
-	border-radius: 6%;
+	border: 1px solid #ccc;
+	border-radius: 2%;	
+	font: 16px Arial;
 }
 
 .description {
 	width: 60%;
-	height: auto;	
+	height: 100%;	
 	margin: auto;
-	border: 1% solid #ccc;
-	border-radius: 6%;
-	font-size: 20px;
+	border: 1px solid #ccc;
+	border-radius: 2%;
+	font: 16px Arial;
 }
 
 .button {
