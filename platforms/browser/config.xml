@@ -13,7 +13,8 @@
     <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/mipmap-xhdpi/ic_launcher.png" />
     <icon gap:platform="android" gap:qualifier="xxhdpi" src="www/res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
     <content src="index.html" />
-    <access origin="*" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.1.0" />
+    <access launch-external="yes" origin="*" />
     <preference name="permissions" value="none" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="orientation" value="portrait" />
