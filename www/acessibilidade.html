@@ -11,24 +11,17 @@
     <script type="text/javascript" src="res/js/jquery.mobile-1.4.5.min.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		 <script type="text/javascript" src="geturi.js"></script>
-   <script type="text/javascript">
- $(document).ready(function() {
-    var url = "json.php";
-    $.getJSON(url, function(result) {
-        console.log(result);
-        $.each(result, function(i, field) {
-            var id = field.id;
-            var title = field.title;
-            var duration = field.duration;
-            var price = field.price;
-            $("#list").append("<a class='item' href='form.html?id=" + id + "&title=" + title + "&duration=" + duration + "&price=" + price + "'><span class='item-note'>$" + price + "</span><h2>" + title + " </h2><p>" + duration + "</p></a>");
-        });
-    });
-});
- </script>
+		<script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+		<script src="https://unpkg.com/vuefire@1.3.0"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+		<script src="fire.js"></script>
+    <script>	
+	function mostra(id){
+	$( "#d"+id).toggle(500);
+	}	
+	</script>
+	
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -36,12 +29,23 @@
 	    <a href="opcoes.html"><div class="topBarBack"><img class="back" src="res/back.png"></div></a>
 	    <div class="topBarInfo" id="categoria">Acessibilidade</div>
     </div>
-    <div id="list">
+    <div id="list" is="transition-group">
+	
+		<div class="direito" v-for="dl in dls" v-if="dl.categoria === 'Acessibilidade'" :key="dl['.key']" :id="dl['.key']" onclick="mostra(this.id);">
+				{{dl.titulo}}
+				<div class="direitoDescricao" :id="theIdValue(dl['.key'])" style="display: none">
+				<p><b>{{dl.dl}}</b></p>  
+				<p>{{dl.descricao}}</p>
+				</div>
+		</div>	
+		
+		
+		  
+		
      </div>
 
 
 
-     
      
 </body>
 </html>

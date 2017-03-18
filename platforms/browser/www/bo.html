@@ -16,42 +16,42 @@ and open the template in the editor.
 
     </head>
     <body>
-	<section id="jurisdição">
-	<div class="container">
-		<div class="center">
-		<h2 class="bigTitle">Legislação Útil Back Office</h2>
-		<p class="smallTitle">Preenche os campos para inserir legislações</p>
-		</div>
-	<form>
-		<div class="form-group">
-			<label class="label">Título</label>
-			<br>
-			<input type="text" id="titulo" class="titleAndCategory">
-			<br>
-			<br>
-			<label class="label">Categoria</label>
-			<br>
-			<input type="text" id="categoria" class="titleAndCategory">
-			<br>
-			<br>
-			<label class="label">DL</label>
-			<br>
-			<input type="text" id="dl" class="lawDecree">
-			<br>
-			<br>
-			<label class="label">Descrição<label>
-			<br>
-			<textarea id="descricao" class="description"></textarea>
-		</div>
+		<section id="jurisdição">
+			<div class="container">
+				<div class="center">
+				<h2 class="bigTitle">Legislação Útil Back Office</h2>
+				<p class="smallTitle">Preenche os campos para inserir legislações</p>
+				</div>
+			<form>
+				<div class="form-group">
+					<label class="label">Título</label>
+					<br>
+					<input type="text" id="titulo" class="titleAndCategory">
+					<br>
+					<br>
+					<label class="label">Categoria</label>
+					<br>
+					<input type="text" id="categoria" class="titleAndCategory">
+					<br>
+					<br>
+					<label class="label">DL</label>
+					<br>
+					<input type="text" id="dl" class="lawDecree">
+					<br>
+					<br>
+					<label class="label">Descrição<label>
+					<br>
+					<textarea id="descricao" class="description"></textarea>
+				</div>
+					<br>
+					<button onclick="saveToList();" class="button">Submit</button>
+				</form>
 				<br>
-				<button onclick="saveToList();" class="button">Submit</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<label class="label">Legislações inseridas:</label>
-				<div id="list"></div>
-		</div>
-	</section>			
+				<br>
+				<br>
+				<label class="label">Legislações inseridas:</label>
+					<div id="list"></div>
+				</div>
+		</section>			
     </body>
 </html>
