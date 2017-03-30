@@ -38,8 +38,7 @@
                 <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager"/>
             </feature>
 
-            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+            
 
 		
 
