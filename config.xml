@@ -27,16 +27,12 @@
     <content src="index.html" />
        <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
 	   <feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-	
-	
-</feature>
-	
-<plugin name="cordova-plugin-network-information" />
-
-<feature name="NetworkStatus">
-    <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-</feature>
+			<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+		</feature>	
+		<feature name="NetworkStatus">
+			<param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+		</feature>
+		<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-network-information" version="1.3.3-dev">
 
 
 
