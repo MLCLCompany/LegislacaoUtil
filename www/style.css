@@ -67,7 +67,6 @@ body{
 
 #topBar{
 	background-color: #4caf50;/*500*/
-	height: 7.5%;
 	font-size: 24px;
 	width: 100%;
 	position: relative;
@@ -77,18 +76,12 @@ body{
 }
 
 .topBarBack{
-	position: relative;
 	float: left;
-	top: 50%;
-	transform: translateY(-50%);
 	width:20%; 
 }
 
-.topBarInfo{
-    position: relative;
-    float: left;
-    top: 50%;
-    transform: translateY(-50%);
+#imgBack{
+	padding-top:4px;
 }
 
 #topBar span{

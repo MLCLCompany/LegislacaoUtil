@@ -13,6 +13,37 @@
     <script type="text/javascript" src="cordova.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
+<script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        checkConnection();
+    }
+
+        function checkConnection() {
+            var networkState = navigator.connection.type;
+
+            var states = {};
+            states[Connection.UNKNOWN]  = 'Unknown connection';
+            states[Connection.ETHERNET] = 'Ethernet connection';
+            states[Connection.WIFI]     = 'WiFi connection';
+            states[Connection.CELL_2G]  = 'Cell 2G connection';
+            states[Connection.CELL_3G]  = 'Cell 3G connection';
+            states[Connection.CELL_4G]  = 'Cell 4G connection';
+            states[Connection.CELL]     = 'Cell generic connection';
+            states[Connection.NONE]     = 'No network connection';
+
+            alert('Connection type: ' + states[networkState]);
+        }
+
+    </script>
+
+	
 </head>
 <body>
 
@@ -22,7 +53,7 @@
         <hr>
         <h2>Regente em Portugal</h2>
         
-        <a href="opcoes.html" ><button id="direitos" style="margin-top: 25%;">Legislação</button></a>
+        <a href="opcoes.html" ><button onclick="isOnline();" id="direitos" style="margin-top: 25%;">Legislação</button></a>
         <br>
         <a href="sobre.html"><button id="sobre">Sobre</button></a>
     </div>

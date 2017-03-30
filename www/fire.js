@@ -28,4 +28,7 @@ var app = new Vue({
   }
 }
 })
+
+document.getElementById("imgBack").style.height = document.getElementById("topBar").clientHeight-8 + 'px';
+		document.getElementById("imgBack").style.width = document.getElementById("imgBack").clientWidth + 'px';
 }
