@@ -29,13 +29,7 @@
 	   <feature name="InAppBrowser">
 			<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
 		</feature>	
-		<feature name="NetworkStatus">
-			<param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-		</feature>
-		<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-network-information" version="1.3.3-dev">
-
-
-
+		
 
 
 <access origin="*" launch-external="yes" />
