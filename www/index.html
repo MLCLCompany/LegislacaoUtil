@@ -40,7 +40,10 @@
             states[Connection.CELL]     = 'Cell generic connection';
             states[Connection.NONE]     = 'No network connection';
 
-            alert('Connection type: ' + states[networkState]);
+            if(states[networkState]==states[Connection.NONE])
+				alert("Ligue a Internet sff!);
+			else
+				window.location.href = "opcoes.html";
         }
 
     </script>
@@ -55,7 +58,7 @@
         <hr>
         <h2>Regente em Portugal</h2>
         
-        <a href="#" ><button onclick="checkConnection();" id="direitos" style="margin-top: 25%;">Legislação</button></a>
+        <a href="#" ><button onclick="tryGo();" id="direitos" style="margin-top: 25%;">Legislação</button></a>
         <br>
         <a href="sobre.html"><button id="sobre">Sobre</button></a>
     </div>
