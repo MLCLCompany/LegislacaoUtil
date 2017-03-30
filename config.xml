@@ -26,7 +26,7 @@
  
     <content src="index.html" />
        <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
-	   <gap:plugin name="org.apache.cordova.network-information" />
+	   <gap:plugin name="cordova-plugin-network-information" source="npm" />
 	   
 	   <feature name="InAppBrowser">
 			<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
