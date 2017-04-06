@@ -42,11 +42,10 @@
             if (states[networkState] == states[Connection.NONE]) {
                 navigator.notification.alert(
                     'Para poder aceder ao conteúdo deve estar ligado à internet',  // message
-                    alertDismissed,         // callback
+                    checkConnection,         // callback
                     'Ligação Falhou',            // title
                     'Tentar Novamente'                  // buttonName
                 );
-                alert("SEM");
             }
             else
                 window.location.href = 'opcoes.html';
