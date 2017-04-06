@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -35,7 +35,7 @@
 				{{dl.titulo}}
 				<div class="direitoDescricao" :id="theIdValue(dl['.key'])" style="display: none">
 				<p><b>{{dl.dl}}</b></p>  
-				{{dl.descricao}}
+                <span v-html="dl.descricao"></span>
 				</div>
 		</div>	
 		
