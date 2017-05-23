@@ -15,8 +15,6 @@ var dlsRef = firebase.database().ref('dls')
 var app = new Vue({
   // element to mount to
   el: '#list',
-  // firebase binding
-  // https://github.com/vuejs/vuefire
   firebase: {
     dls: dlsRef
   },
