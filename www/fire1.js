@@ -8,25 +8,50 @@ var config = {
   };
 firebase.initializeApp(config)
 
-var entrysRef = firebase.database().ref('entrys')
+var entrysIndexRef = firebase.database().ref('entrys/index');
+var entrysTransportesRef = firebase.database().ref('entrys/transportes');
+var entrysLojasRef = firebase.database().ref('entrys/lojas');
+var entrysAnimaisRef = firebase.database().ref('entrys/animais');
+var entrysAcessibilidadeRef = firebase.database().ref('entrys/acessibilidade');
+var entrysComunicacoesRef = firebase.database().ref('entrys/comunicacoes');
+var entrysTodosRef = firebase.database().ref('entrys/todos');
+
 window.addEventListener('load', function () {
 // create Vue app
 var app = new Vue({
   // element to mount to
-  el: '#index',
+  el: 'div',
+  
   
   
   firebase: {
-    entrys: entrysRef
+    entrysIndex: entrysIndexRef
   },
   
   
   // methods
   methods: {
-    addEntry: function () {
-       alert(1);
-        entrysRef.push(moment().format());
-    }    
+    addEntryIndex: function () {
+        entrysIndexRef.push(moment().format());
+    },    
+    addEntryTransportes: function () {
+        entrysTransportesRef.push(moment().format());
+    }   ,    
+    addEntryLojas: function () {
+        entrysLojasRef.push(moment().format());
+    }   ,    
+    addEntryAnimais: function () {
+        entrysAnimaisRef.push(moment().format());
+    }   ,    
+    addEntryAcessibilidade: function () {
+        entrysAcessibilidadeRef.push(moment().format());
+    }   ,    
+    addEntryComunicacoes: function () {
+        entrysComunicacoesRef.push(moment().format());
+    }   ,    
+    addEntryTodos: function () {
+        entrysTodosRef.push(moment().format());
+    }   
   }
 })
 })
