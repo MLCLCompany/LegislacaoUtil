@@ -24,6 +24,7 @@ var app = new Vue({
   // methods
   methods: {
     addEntry: function () {
+       alert(1);
         entrysRef.push(moment().format());
     }    
   }
