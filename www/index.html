@@ -13,6 +13,13 @@
     <script type="text/javascript" src="cordova.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
+	
+		<script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+		<script src="https://unpkg.com/vuefire@1.3.0"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+		<script src="fire1.js"></script>
+		<script src="moment.js"></script>
+	
 <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
@@ -63,7 +70,7 @@
         <hr>
         <h2>Regente em Portugal</h2>
         
-        <a href="#" ><button onclick="checkConnection();" id="direitos" style="margin-top: 25%;">Legislação</button></a>
+        <a href="#" ><button v-on:click="addEntry" onclick="checkConnection();" id="direitos" style="margin-top: 25%;">Legislação</button></a>
         <br>
         <a href="sobre.html"><button id="sobre">Sobre</button></a>
     </div>

@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
 // create Vue app
 var app = new Vue({
   // element to mount to
-  el: '#list',
+  el: '#index',
   
   
   firebase: {
@@ -26,9 +26,6 @@ var app = new Vue({
     addEntry: function () {
         entrysRef.push(moment().format());
     }    
-  },
-  beforeMount(){
-    this.addEntry()
- }
+  }
 })
 })
