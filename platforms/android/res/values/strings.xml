@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Legislação Útil</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    
+    <string name="google_app_id">1:546399102928:android:af38286d81e0b994</string>
+    <string name="google_api_key">AIzaSyBkEowQ6yWIT5c29aNGkQBJwQicdQ2PaGE</string>
+</resources>

@@ -1,0 +1,92 @@
+
+section {
+    float: left;
+    width: 100%;
+}
+
+section {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 2%;
+	margin-left: 15%;
+	
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    width: 65%;
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.titleAndCategory {
+	width: 35%;		
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 2%;
+	font: 16px Arial;
+}
+
+.lawDecree {
+	width: 15%;	
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 2%;	
+	font: 16px Arial;
+}
+
+.description {
+	width: 60%;
+	height: 100%;	
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 2%;
+	font: 16px Arial;
+}
+
+.button {
+    width: 100%;
+    color: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    font: bold 28px Arial Black;
+    padding: 3% 6%;
+    text-transform: uppercase;
+	background: #e17b21;
+	border: none;
+}
+
+body {
+	background: #ECECEA;
+}
+
+.label {
+	text-align: center;
+	font: bold 20px Arial Black;
+	color: #e17b21;
+}
+
+.bigTitle {
+	font: bold 35px Arial Black;
+	color: #e17b21;
+}
+
+.smallTitle {
+	font: bold 16px Arial Black;
+	color: #e17b21;
+}
+
+
+
+
+
+

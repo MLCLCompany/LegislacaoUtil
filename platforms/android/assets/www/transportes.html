@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <title>Os Nossos Direitos</title>
+    <link rel="stylesheet" href="res/js/jquery.mobile-1.4.5.min.css" type="text/css" charset="utf-8" />
+    <script type="text/javascript" src="res/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="res/js/jquery.mobile-1.4.5.min.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+		<script src="https://unpkg.com/vuefire@1.3.0"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+		<script src="fire.js"></script>
+    <script>	
+	function mostra(id){
+	$( "#d"+id).toggle(500);
+	}	
+	</script>
+	
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="topBar">
+	    <a href="opcoes.html"><div class="topBarBack"><img class="back" id="imgBack" src="res/back.png"></div></a>
+	    <div class="topBarInfo" id="categoria">Transportes</div>
+    </div>
+    <div id="list" is="transition-group">
+	
+		<div class="direito" v-for="dl in dls" v-if="dl.categoria === 'Transportes'" :key="dl['.key']" :id="dl['.key']" onclick="mostra(this.id);">
+				{{dl.titulo}}
+				<div class="direitoDescricao" :id="theIdValue(dl['.key'])" style="display: none">
+				<p><b>{{dl.dl}}</b></p>  
+                <span v-html="dl.descricao"></span>
+				</div>
+		</div>	
+		
+		
+		  
+		
+     </div>
+
+
+
+     
+</body>
+</html>

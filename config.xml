@@ -1,52 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.CompanyMLCL.LegislacaoUtil" version="1.3.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.CompanyMLCL.LegislacaoUtil" version="1.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Legislação Útil</name>
     <description>
               Legislação de bolso útil.
     </description>
-    <author email="company.mlcl@gmail.com" >
+    <author email="company.mlcl@gmail.com">
         Company MLCL
     </author>
-	   <preference name = "permissions" value = "none"/>
-<preference name="DisallowOverscroll" value="true" />
-<preference name="orientation" value="portrait" />
-	<preference name="fullscreen" value="true" />
-     
-   <icon src="www/res/icon/android/mipmap-ldpi/ic_launcher.png" gap:platform="android" gap:qualifier="ldpi"/>
-	
-	<icon src="www/res/icon/android/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi"/>
-	
-	<icon src="www/res/icon/android/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi"/>
-	
-	<icon src="www/res/icon/android/mipmap-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi"/>
-	
-	<icon src="www/res/icon/android/mipmap-xxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxhdpi"/>
- 
- 
- 
+    <preference name="permissions" value="none" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/mipmap-ldpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/mipmap-mdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/mipmap-hdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/mipmap-xhdpi/ic_launcher.png" />
+    <icon gap:platform="android" gap:qualifier="xxhdpi" src="www/res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
+    <resource-file src="src/android/res/drawable-hdpi/yourImage.png" target="www/res/mipmap-hdpi/ic_launcher.png" />
     <content src="index.html" />
-       <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
-	   <gap:plugin name="cordova-plugin-network-information" source="npm" />
-	   <gap:plugin name="cordova-plugin-dialogs" source="npm" />
-	   
-	   <feature name="InAppBrowser">
-			<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-		</feature>	
-		<!--feature name="NetworkStatus">
-			<param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-		</feature-->
-		
-		 
-            <feature name="NetworkStatus">
-                <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager"/>
-            </feature>
-
-            
-
-		
-
-
-
-
-<access origin="*" launch-external="yes" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.1.0" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" />
+    <gap:plugin name="cordova-plugin-dialogs" source="npm" />
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <access launch-external="yes" origin="*" />
+    <engine name="android" spec="^6.2.3" />
+    <plugin name="cordova-plugin-firebase" spec="^0.1.21" />
 </widget>

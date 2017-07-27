@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "546399102928",
+    "firebase_url": "https://legislacaoutil.firebaseio.com",
+    "project_id": "legislacaoutil",
+    "storage_bucket": "legislacaoutil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546399102928:android:af38286d81e0b994",
+        "android_client_info": {
+          "package_name": "com.CompanyMLCL.LegislacaoUtil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546399102928-6hojukv4m0v0fej10290nifb8v22j8ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkEowQ6yWIT5c29aNGkQBJwQicdQ2PaGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
