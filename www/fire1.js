@@ -8,6 +8,11 @@ var config = {
   };
 firebase.initializeApp(config)
 
+
+
+
+
+
 var entrysIndexRef = firebase.database().ref('entrys/index');
 var entrysTransportesRef = firebase.database().ref('entrys/transportes');
 var entrysLojasRef = firebase.database().ref('entrys/lojas');
@@ -17,6 +22,11 @@ var entrysComunicacoesRef = firebase.database().ref('entrys/comunicacoes');
 var entrysTodosRef = firebase.database().ref('entrys/todos');
 
 window.addEventListener('load', function () {
+	
+admob.setOptions({
+	publisherId:          "ca-app-pub-7721308332971218~8555619788",  // Required
+	interstitialAdId:     "ca-app-pub-7721308332971218/2655414081",  // Optional
+});
 // create Vue app
 var app = new Vue({
   // element to mount to
