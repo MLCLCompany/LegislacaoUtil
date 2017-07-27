@@ -7,11 +7,14 @@
             "android"
         ],
         "plugins": {
-            "cordova-plugin-firebase": {}
+            "cordova-plugin-firebase": {},
+            "cordova-admob": {}
         }
     },
     "dependencies": {
+        "cordova-admob": "^4.1.16",
         "cordova-android": "^6.2.3",
+        "cordova-connectivity-monitor": "^1.2.2",
         "cordova-plugin-firebase": "^0.1.21"
     }
 }

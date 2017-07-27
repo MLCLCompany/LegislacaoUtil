@@ -11,6 +11,14 @@
                         {
                             "xml": "<feature name=\"FirebasePlugin\"><param name=\"android-package\" value=\"org.apache.cordova.firebase.FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"connectivity\"><param name=\"android-package\" value=\"com.appfeel.cordova.connectivity.Connectivity\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AdMobAds\"><param name=\"android-package\" value=\"com.appfeel.cordova.admob.AdMobAds\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -34,11 +42,11 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
-                            "count": 1
+                            "count": 3
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 1
+                            "count": 3
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
@@ -57,6 +65,10 @@
                         {
                             "xml": "<receiver android:name=\"org.apache.cordova.firebase.OnNotificationOpenReceiver\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -65,6 +77,12 @@
     },
     "installed_plugins": {
         "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "com.CompanyMLCL.LegislacaoUtil"
+        },
+        "cordova-connectivity-monitor": {
+            "PACKAGE_NAME": "com.CompanyMLCL.LegislacaoUtil"
+        },
+        "cordova-admob": {
             "PACKAGE_NAME": "com.CompanyMLCL.LegislacaoUtil"
         }
     },
@@ -77,9 +95,28 @@
             "clobbers": [
                 "FirebasePlugin"
             ]
+        },
+        {
+            "id": "cordova-connectivity-monitor.connectivity",
+            "file": "plugins/cordova-connectivity-monitor/www/connectivity.js",
+            "pluginId": "cordova-connectivity-monitor",
+            "clobbers": [
+                "window.connectivity"
+            ]
+        },
+        {
+            "id": "cordova-admob.AdMobAds",
+            "file": "plugins/cordova-admob/www/admob.js",
+            "pluginId": "cordova-admob",
+            "clobbers": [
+                "window.admob",
+                "window.tappx"
+            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-firebase": "0.1.21"
+        "cordova-plugin-firebase": "0.1.21",
+        "cordova-connectivity-monitor": "1.2.2",
+        "cordova-admob": "4.1.16"
     }
 }
